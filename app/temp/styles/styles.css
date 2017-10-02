@@ -460,6 +460,11 @@ img {
     height: auto;
 }
 
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
 .logo {
     width: 32px;
     height: 32px;
@@ -524,4 +529,105 @@ img {
 .intro-section__subtitle {
             font-size: 3rem
     }
+    }
+
+.row {
+    width: 100%;
+}
+
+.row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+.row__project-4 {
+            float: left;
+            width: 33.33%;
+            /* margin-right: 0;
+            padding-right: 0; */
+        }
+
+.project {
+    background-color: #FFF;
+    position: relative;
+}
+
+.project__title {
+        font-size: 1.3rem;
+        color: #555555;
+        font-weight: 400;
+        background-color: #FFF;
+        padding: 1rem;
+        display: block;
+        width: 100%;
+    }
+
+.project__title:hover {
+        -webkit-transform: translateY(-30%);
+                transform: translateY(-30%);
+        cursor: pointer;
+    }
+
+.project__title:hover .project__summary{
+        display: block;
+        opacity: 1.0;
+    }
+
+.project__summary {
+        opacity: 0.0;
+        -webkit-transition: all 500ms ease-in-out;
+        transition: all 500ms ease-in-out;
+        display: none;
+        font-size: 1rem;
+        line-height: 1.5em;
+        color: #7E7E7E;
+        font-weight: 300;
+    }
+
+.project__summary {
+        display: block;
+    }
+
+.project__image:hover .project__summary{
+        display: block;
+        opacity: 1.0;
+    }
+
+.project__image {
+        cursor: pointer;
+    }
+
+.project__image:hover .project__title {
+        -webkit-transform: translateY(-30%);
+                transform: translateY(-30%);
+    }
+
+.project__subtitle {
+        position: absolute;
+        font-size: .8rem;
+        color: #7E7E7E;
+        font-weight: 300;
+        top: 0;
+        right: 0;
+        background-color: rgba(255, 255, 255, .8);
+        padding: 8px;
+    }
+
+.project__task {
+        margin: 0;
+    }
+
+.footer {
+    width: 100%;
+    height: 60px;
+    background-color: #000;
+}
+
+.footer__social {
+        display: inline;
+    }
+
+.footer__align {
+        display: inline-block;
     }

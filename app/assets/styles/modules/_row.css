@@ -1,0 +1,11 @@
+.row {
+    @mixin clearfix;
+    width: 100%;
+
+    &__project-4 {
+            float: left;
+            width: 33.33%;
+            /* margin-right: 0;
+            padding-right: 0; */
+        }
+}
