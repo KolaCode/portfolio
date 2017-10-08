@@ -1,0 +1,80 @@
+.menu {
+
+    padding: .8rem 0 1.7rem 1.5rem;
+    height: 60px;
+    width: 100%;
+    color: #FFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 70;
+    width: 100%;
+    display: inline;
+
+
+    &__logo {
+        transform: translateY(25%);
+    }
+
+    &__icons {
+        width: 35px;
+        height: 35px;
+    }
+
+    &__logo {
+        width: 85%;
+        display: inline-block;
+    }
+
+    &__about-contact-icons {
+        width: 40%;
+        display: inline-block;
+        fill: #333;
+        color: #333;
+    }
+
+    &__about-contact-icons:hover {
+        width: 40%;
+        display: inline-block;
+        fill: #702323;
+        color: #702323;
+        cursor: pointer;
+    }
+
+    &__about-contact-icons:active {
+        width: 40%;
+        display: inline-block;
+        fill: #702323;
+        color: #702323;
+        border-bottom: solid 3px #702323;
+    }
+
+    /* &__another-about-contact a{
+        fill: #333;
+        color: #333;
+    }
+
+    &__another-about-contact:hover {
+        fill: #702323;
+        color: #702323;
+    }
+
+    &__another-about-contact:active {
+        fill: #702323;
+        color: #702323;
+        border-bottom: solid 3px #702323;
+    } */
+
+    &__logo-about-contact {
+        display: inline-block;
+    }
+
+    &__items{
+        float: right;
+        width: 15%;
+        display: inline block;
+        text-align: center;
+        fill: #333;
+        color: #333;
+    }
+}

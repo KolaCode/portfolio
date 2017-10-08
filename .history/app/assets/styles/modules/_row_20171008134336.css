@@ -1,0 +1,32 @@
+.row {
+    @mixin clearfix;
+    overflow: hidden;
+    padding-bottom: 30px;
+
+    @mixin atMedium {
+        &__project-medium-4 {
+            float: left;
+            width: 33.33%;
+        }
+    }
+
+
+
+    &--gutters > div {
+        padding-right: 20px;
+        padding-left: 20px;
+
+        @mixin atMedium {
+            padding-right: 20px;
+        }
+    }
+
+    &--gutters > div:last-child {
+        padding-right: 20px;
+
+        @mixin atMedium {
+            padding-right: 0px;
+        }
+        
+    }
+}

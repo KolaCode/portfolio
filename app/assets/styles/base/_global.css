@@ -1,6 +1,11 @@
 body {
     font-family: 'roboto', sans-serif;
     color: #333;
+    margin: 0 0 100px; /* bottom = footer height */
+}
+
+a {
+    text-decoration: none;
 }
 
 img {
@@ -10,4 +15,9 @@ img {
 
 * {
     box-sizing: border-box;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
 }

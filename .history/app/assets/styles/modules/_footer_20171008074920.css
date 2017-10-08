@@ -1,0 +1,46 @@
+.footer {
+    position: fixed;
+    background-color: #000;
+    left: 0;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    color: #7C7C7C;
+    font-weight: 200;
+
+    &__social {
+        display: inline;
+        float: right;
+        padding-right: 20px;
+
+        @mixins atSmall {
+
+        }
+    }
+
+    &__align {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+        @mixins @tSmall {
+            display: inline-block;
+            float: left;
+        }
+    }
+
+    &__designed {
+        padding: 0;
+        text-align: center;
+        
+        @mixins @tSmall {
+            padding-left: 20px;
+            text-align: left;
+        }
+    }
+
+    &__phone {
+        text-align: center;
+    }
+
+}
